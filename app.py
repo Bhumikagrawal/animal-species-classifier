@@ -4,10 +4,8 @@ import numpy as np
 from PIL import Image
 
 # Load trained model (IMPORTANT: compile=False for compatibility)
-model = tf.keras.models.load_model(
-    "animal_species_model.h5",
-    compile=False
-)
+model = tf.keras.models.load_model("animal_species_model.keras")
+
 
 # Class names (same order as training)
 class_names = [
